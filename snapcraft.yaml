@@ -1,0 +1,24 @@
+name: Dev_6674
+summary: Dev 6674 Dev
+
+description: |
+      Starts the 6674 App
+
+version: git
+grade: stable
+confinement: devmode
+base: core20
+
+architectures:
+  - build-on: [arm64, armhf, amd64]
+
+apps:
+  Dev_6674:
+    command: Main.py
+    plugs: [home]
+
+parts:
+  Dev_6674:
+    plugin: python
+    source: https://github.com/
+    python-packages: PyQt5
