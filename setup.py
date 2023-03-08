@@ -19,7 +19,7 @@ setup(
     keywords = "example documentation tutorial",
     url = "https://github.com/BlueNexus6674/Dev_6674",
     packages = ['UI_Lib'],
-    scripts = ['bin/Main'],
+    scripts = ['bin/Main.py'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
