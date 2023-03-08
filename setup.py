@@ -15,6 +15,6 @@ setup(
     package = ["src"],
     entry_points = '''
     	[console_scripts]
-    	dev-6674=src.Main:Main
+    	dev-6674=Main:Main
     '''
 )
