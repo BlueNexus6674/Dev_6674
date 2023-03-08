@@ -18,8 +18,8 @@ setup(
     license = "BSD",
     keywords = "example documentation tutorial",
     url = "https://github.com/BlueNexus6674/Dev_6674",
-    packages = ['devpip/Main'],
-    scipts = ['devpip'],
+    packages = ['devpip'],
+    scipts = ['devpip/Main'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
