@@ -1,4 +1,4 @@
-name: Dev_6674
+name: dev-6674
 summary: Dev 6674 Dev
 
 description: |
@@ -13,12 +13,14 @@ architectures:
   - build-on: [arm64, armhf, amd64]
 
 apps:
-  Dev_6674:
-    command: Main.py
+  dev-6674:
+    command: bin/main
     plugs: [home]
 
 parts:
-  Dev_6674:
+  dev-6674:
     plugin: python
-    source: https://github.com/
-    python-packages: PyQt5
+    source: https://github.com/BlueNexus6674/Dev_6674.git
+    source-type: git
+    stage-packages:
+      - python3-pyqt5
