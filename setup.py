@@ -13,6 +13,7 @@ setup(
     name = "dev-6674",
     url = "https://github.com/BlueNexus6674/Dev_6674",
     package = ["src"],
+    install_requries = ["pyqt5"],
     entry_points = '''
     	[console_scripts]
     	dev-6674=Main:Main
