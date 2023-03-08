@@ -14,7 +14,7 @@ architectures:
 
 apps:
   dev-6674:
-    command: usr/local/bin/Main.py
+    command: bin/dev-6674
     plugs: [home]
 
 parts:

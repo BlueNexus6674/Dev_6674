@@ -12,9 +12,8 @@ def read(fname):
 setup(
     name = "dev-6674",
     url = "https://github.com/BlueNexus6674/Dev_6674",
-    py_modules = ["Main"],
     entry_points = '''
     	[console_scripts]
-    	Main=Main:Main
+    	dev-6674=src.Main:Main
     '''
 )
