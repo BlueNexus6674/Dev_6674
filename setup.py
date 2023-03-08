@@ -11,19 +11,10 @@ def read(fname):
 
 setup(
     name = "dev-6674",
-    version = "0.0.4",
-    author = "Andrew Carter",
-    author_email = "andrewjcarter@gmail.com",
-    description = ("An demonstration "),
-    license = "BSD",
-    keywords = "example documentation tutorial",
     url = "https://github.com/BlueNexus6674/Dev_6674",
-    packages = ['UI_Lib'],
-    scripts = ['bin/Main.py'],
-    long_description=read('README.md'),
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Topic :: Utilities",
-        "License :: OSI Approved :: BSD License",
-    ],
+    py_modules = ["Main"],
+    entry_points = '''
+    	[console_scripts]
+    	Main=Main:Main
+    '''
 )

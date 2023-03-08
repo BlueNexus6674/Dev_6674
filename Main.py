@@ -22,9 +22,6 @@ def Main():
 	
 	sys.exit(App.exec_())				# Executes the App
 
-
-if __name__ == "__main__":
-    Main()
     
     
     
