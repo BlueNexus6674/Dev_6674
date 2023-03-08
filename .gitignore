@@ -1,4 +1,6 @@
-__pycache__
-build
-dev_6674.egg-info
-dist
+*
+!snapcraft.yaml
+!setup.py
+!README.md
+!UIDev
+!Src
