@@ -14,12 +14,12 @@ setup(
     version = "0.0.4",
     author = "Andrew Carter",
     author_email = "andrewjcarter@gmail.com",
-    description = ("An demonstration of how to create, document, and publish "
-                                   "to the cheese shop a5 pypi.org."),
+    description = ("An demonstration "),
     license = "BSD",
     keywords = "example documentation tutorial",
     url = "https://github.com/BlueNexus6674/Dev_6674",
-    packages=['devpip'],
+    packages = ['devpip/Main'],
+    scipts = ['devpip']
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",

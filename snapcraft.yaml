@@ -14,7 +14,7 @@ architectures:
 
 apps:
   dev-6674:
-    command: bin/main
+    command: build/lib/devpip/Main
     plugs: [home]
 
 parts:
