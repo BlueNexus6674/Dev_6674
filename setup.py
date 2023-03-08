@@ -19,7 +19,7 @@ setup(
     keywords = "example documentation tutorial",
     url = "https://github.com/BlueNexus6674/Dev_6674",
     packages = ['devpip/Main'],
-    scipts = ['devpip']
+    scipts = ['devpip'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
