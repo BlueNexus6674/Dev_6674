@@ -15,7 +15,7 @@ class ROS_Import(object):
 				]
 			
 			self.ROSInit = True
-			self.ROSLabel.setPixmap(QtGui.QPixmap(self.DataPath + "/Images/LEDOn.png"))
+			self.ROSLabel.setPixmap(QtGui.QPixmap(self.InstallPath + "/Images/ButtonLED/LEDOn.png"))
 			print("Import Complete")
 			
 	
