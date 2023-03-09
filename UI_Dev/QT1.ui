@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="button1">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>210</y>
+      <x>80</x>
+      <y>250</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -27,17 +27,23 @@
      <string>PressMe</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label1">
+   <widget class="QLabel" name="ROSLabel">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>150</y>
-      <width>67</width>
-      <height>17</height>
+      <x>0</x>
+      <y>0</y>
+      <width>45</width>
+      <height>45</height>
      </rect>
     </property>
     <property name="text">
-     <string>Hello</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../src/Data/LEDOff.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QSpinBox" name="spinBox">
@@ -50,6 +56,23 @@
      </rect>
     </property>
    </widget>
+   <widget class="QProgressBar" name="PB">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>250</y>
+      <width>118</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <zorder>button1</zorder>
+   <zorder>spinBox</zorder>
+   <zorder>PB</zorder>
+   <zorder>ROSLabel</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -60,10 +83,24 @@
      <height>19</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionImport_ROS_Py"/>
+   </widget>
+   <addaction name="menuFile"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionImport_ROS_Py">
+   <property name="text">
+    <string>Import ROS Py</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="../src/Data/Image.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>button1</sender>
@@ -72,8 +109,8 @@
    <slot>stepUp()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>249</x>
-     <y>240</y>
+     <x>139</x>
+     <y>280</y>
     </hint>
     <hint type="destinationlabel">
      <x>284</x>
@@ -88,8 +125,8 @@
    <slot>yesclick()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>211</x>
-     <y>240</y>
+     <x>101</x>
+     <y>280</y>
     </hint>
     <hint type="destinationlabel">
      <x>224</x>

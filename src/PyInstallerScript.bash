@@ -1,7 +1,7 @@
 #! /bin/bash
 
 Name=ROS_Automate
-Imports=(PyQt6)
+Imports=(PyQt6 logging-config)
 OneFile=1
 Release=1
 
@@ -24,7 +24,7 @@ fi
 # ----------------
 
 PyName=$Name.py
-pyinstaller $PyName $HiddenImportString $OneFileOut -y
+pyinstaller $PyName $HiddenImportString $OneFileOut --add-data ./Data:./Data -y 
 # ----------------
 
 rm -r ../Output
