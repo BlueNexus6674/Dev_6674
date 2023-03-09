@@ -32,9 +32,10 @@ then
 fi
 
 # ----------------
-
+cd ./src/
 PyName=$Name.py
 pyinstaller $PyName $HiddenImportString $DataString $OneFileOut  -y 
+
 # ----------------
 
 rm -r ../Output
@@ -56,4 +57,5 @@ fi
 mv dist ../Output/dist
 mv build ../Output/build
 mv $Name.spec ../Output/$Name.spec
+cd ../
 	
